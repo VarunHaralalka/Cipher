@@ -21,26 +21,26 @@ function ciphertxt(){
         for (i = 0; i < l; i++)
         {
             x = input.charAt(i);
-            if (x.charAt(0) >= 65 && x.charAt(0) <= 90)
+            if (x.charCodeAt(0) >= 65 && x.charCodeAt(0) <= 90)
             {
-                if (x.charAt(0) > (90 - c1))
+                if (x.charCodeAt(0) > (90 - c1))
                 {
-                    en += String.fromCharCode((64 + c1 - (90 - x.charAt(0))));
+                    en += String.fromCharCode((64 + c1 - (90 - x.charCodeAt(0))));
                 }
                 else 
                 {
-                    en += String.fromCharCode((x.charAt(0) + c1));
+                    en += String.fromCharCode((x.charCodeAt(0) + c1));
                 }
             }
-            else if (x.charAt(0) >= 97 && x.charAt(0) <= 122)
+            else if (x.charCodeAt(0) >= 97 && x.charCodeAt(0) <= 122)
             {
-                if (x.charAt(0) > (122 - c2))
+                if (x.charCodeAt(0) > (122 - c2))
                 {
-                    en += String.fromCharCode((96 + c2 - (122 - x.charAt(0))));
+                    en += String.fromCharCode((96 + c2 - (122 - x.charCodeAt(0))));
                 }
                 else 
                 {
-                    en += String.fromCharCode((x.charAt(0) + c2));
+                    en += String.fromCharCode((x.charCodeAt(0) + c2));
                 }
             }
             else 
